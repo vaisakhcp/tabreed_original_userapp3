@@ -1,0 +1,76 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 2s forwards;
+}
+
+.logo-animation {
+  animation: fadeIn 2s forwards, fadeOut 2s 5s forwards; /* Fade in for 2s, hold for 3s, fade out for 2s */
+}
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* src/index.css */
+
+.link-like {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signature-container {
+  max-width: 100%;
+  overflow: hidden; /* or overflow: auto; */
+}
+
+.signature {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.link-like {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+body,
+html {
+  font-family: 'Poppins', sans-serif !important;
+}
+/* Add this to your CSS file or a <style> tag */
+.table-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.sticky-header th {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
